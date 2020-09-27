@@ -2,31 +2,16 @@
 	"name": "react-client",
 	"version": "0.1.0",
 	"private": true,
+	"scripts": {
+		"start": "parcel public/index.html --no-source-maps",
+		"build": "parcel build public/index.html --no-source-maps",
+		"css": "npx tailwindcss build src/tailwind.css -o src/index.css"
+	},
 	"dependencies": {
+		"clsx": "^1.1.1",
+		"parcel": "^1.12.4",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
-		"react-scripts": "3.4.3",
-		"tailwindcss": "^1.8.5"
-	},
-	"scripts": {
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"eject": "react-scripts eject",
-		"build:css": "tailwindcss build src/index.css -o public/style.css"
-	},
-	"eslintConfig": {
-		"extends": "react-app"
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
+		"tailwindcss": "^1.8.10"
 	}
 }
