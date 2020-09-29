@@ -5,11 +5,13 @@
 	"scripts": {
 		"start": "parcel public/index.html --no-source-maps",
 		"build": "parcel build public/index.html --no-source-maps",
-		"css": "npx tailwindcss build src/tailwind.css -o src/index.css"
+		"css": "postcss src/tailwind.css -o src/index.css"
 	},
 	"dependencies": {
+		"autoprefixer": "^9.8.6",
 		"clsx": "^1.1.1",
 		"parcel": "^1.12.4",
+		"postcss-cli": "^8.0.0",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
 		"tailwindcss": "^1.8.10"
